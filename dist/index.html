@@ -9,52 +9,55 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="">
-      <header class="w-full text-center">
-        <h1 class="text-3xl">Simple Calculator</h1>
-      </header>
-      <div class="container flex flex-col justify-center items-center">
-        <div class="">
-          <div id="display-box">
-            <div id="display" class="">
-              <h3 id="display-text" class=""></h3>
-            </div>
-          </div>
-          <div id="buttons">
-            <button id="divide">÷</button>
-            <button id="multiply">×</button>
-            <button id="add">+</button>
-            <button id="subtract">-</button>
-            <button id="backspace">⌫</button>
-            <button id="clear">AC</button>
-            <button id="equate">=</button>
-            <button id="7">7</button>
-            <button id="8">8</button>
-            <button id="9">9</button>
-            <button id="4">4</button>
-            <button id="5">5</button>
-            <button id="6">6</button>
-            <button id="1">1</button>
-            <button id="2">2</button>
-            <button id="3">3</button>
-            <button id="0" class="zero">0</button>
-            <button id="decimal">.</button>
+    <header class="w-full text-center">
+      <h1 class="text-3xl">Simple Calculator App</h1>
+    </header>
+    <div
+      class="container flex flex-col justify-center items-center w-full h-96 m-auto"
+    >
+      <div class="w-full h-full">
+        <div id="display-box">
+          <div
+            id="display"
+            class="flex flex-row justify-start items-center p-2"
+          >
+            <h3 id="display-text" class="text-black"></h3>
           </div>
         </div>
+        <div id="buttons">
+          <button id="divide">÷</button>
+          <button id="multiply">×</button>
+          <button id="add">+</button>
+          <button id="subtract">-</button>
+          <button id="backspace">⌫</button>
+          <button id="clear">AC</button>
+          <button id="equate">=</button>
+          <button id="7">7</button>
+          <button id="8">8</button>
+          <button id="9">9</button>
+          <button id="4">4</button>
+          <button id="5">5</button>
+          <button id="6">6</button>
+          <button id="1">1</button>
+          <button id="2">2</button>
+          <button id="3">3</button>
+          <button id="0" class="zero">0</button>
+          <button id="decimal">.</button>
+        </div>
       </div>
-      <footer
-        class="flex justify-center items-center h-fit w-full bg-gray-200/5 bottom-0 p-1"
-      >
-        <p class="text-gray-50 text-sm">
-          Copyright 2022 -
-          <a
-            class="text-cyan-400 hover:text-cyan-900 transition-colors"
-            href="https://adamyeomans.com/"
-            >Adam Yeomans</a
-          >
-        </p>
-      </footer>
     </div>
+    <footer
+      class="flex justify-center items-center h-fit w-full bg-gray-200/5 bottom-0 absolute p-1"
+    >
+      <p class="text-gray-50 text-sm">
+        Copyright 2022 -
+        <a
+          class="text-cyan-400 hover:text-cyan-900 transition-colors"
+          href="https://adamyeomans.com/"
+          >Adam Yeomans</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
 <script src="/index.js"></script>
