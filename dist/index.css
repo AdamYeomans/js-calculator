@@ -706,7 +706,9 @@ footer {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  row-gap: 1.5em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
   padding: 5px;
 }
 
