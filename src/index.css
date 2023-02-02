@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  button {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out;
+  }
+}
+
+button:active {
+  transform: translate(0em, 0.75em);
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: inherit;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+button:active::before {
+  transform: translate3d(0, 0, -1em);
+}
+
 header {
   min-height: 10vh;
   /* flex-grow: 1; */
